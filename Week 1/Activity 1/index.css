@@ -1,0 +1,184 @@
+/* Universal selector '*' */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif
+}
+
+
+/* Start main class */
+
+.container{
+    scroll-snap-type: y mandatory;
+}
+
+/* End main class */
+
+
+/* Start welcome section */
+
+section{ 
+    height:100vh;
+    scroll-snap-align: start;
+}
+
+.welcome{
+    background-image: url(img/welcome-bg.jpg);
+    background-size: cover;
+}
+
+.text-wrap{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.text-size{
+    font-size:20px;
+    font-weight: 700;
+    color: #192841;
+}
+
+h1{
+    font-size: 90px;
+    font-family:  'Franklin Gothic Medium', sans-serif;
+    color: #192841;
+}
+
+
+p{
+    padding: 15px 150px 0px 150px; 
+    line-height: 1.5;
+
+}
+
+/* End welcome section*/
+
+
+/* Start Interest and Hobbies Section */
+
+.interest-hobbies{
+    background-image: url(img/footer.jpg);
+    background-size: cover;
+    display:grid;
+    grid-template-rows: 300px 300px;
+    padding: 1.5rem 15rem 1.5rem 15rem;
+}
+
+.interest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/row-bg.jpg);
+    margin-bottom: 10px;
+}
+
+.interest .image{
+    padding-right: 40px;
+}
+
+.interest img{
+    height: 250px;
+}
+
+.interest .text{
+    font-size: 17px;
+    padding-left: 40px;
+    line-height: 1.5;
+    color: white;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+
+.hobbies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/row-bg.jpg);
+}
+
+.hobbies .image{
+    padding-left: 40px;
+}
+
+.hobbies img{
+    height: 250px;
+}
+
+.hobbies .text{
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 40px;
+    line-height: 1.5;
+    color: white;
+}
+/* End Interest and Hobbies Section */
+
+
+/* Start Table Section */
+
+.table-section{
+    background-image: url(img/table-bg.jpg);
+    padding: 10rem;
+}
+
+h2{
+    font-size: 45px;
+    text-shadow: 50px;
+    text-align: center;
+    line-height: 1.5;
+    font-family:  'Franklin Gothic Medium', sans-serif;
+}
+
+.table-bg{
+    background-color: white;
+    border-radius: 10px;
+}
+
+table{
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr{
+    border-left: 10px;
+    border-right: 10px;
+}
+
+th{
+    color: white;
+    background-image: url(img/row-bg.jpg);
+    background-size: cover;
+
+}
+
+th, td { 
+    padding: 15px;
+}
+/* End Table Section */
+
+/* Footer */
+
+.text-web{
+    padding-top: 15px;
+    text-align: center;
+    background-image: url("img/footer.jpg");
+    background-size: cover;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 20px 20px;
+    background-image: url("img/footer.jpg");
+    background-size: cover;
+}
+
+.footer img{
+    width:  35px;
+    padding-right:10px;
+}
