@@ -9,6 +9,8 @@
 .container{
     height: 100vh;
     padding: 60px;
+    background-image: url(img/login.jpg);
+    background-size: cover;
 }
 
 .margin-box{
