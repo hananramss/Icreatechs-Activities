@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+
 *{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: Helvetica, sans-serif;
-    /* font-family:  'Franklin Gothic Medium', sans-serif; */
+    font-family: 'Inter', sans-serif;
 }
 
 .container{
     height: 100vh;
     padding: 60px;
-    background-image: url(img/login.jpg);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
 }
 
@@ -17,7 +19,7 @@
     padding:30px 50px 30px 50px;
 }
 
-.form-box{
+.grid-box{
     display: grid;
     grid-template-columns: 300px 400px;
     align-items: center;
@@ -71,6 +73,7 @@
 input{
     width: 74%;
     height: 20px;
+    font-style: italic;
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid;
@@ -90,6 +93,7 @@ input{
     background-color: rgb(235, 235, 235);
     color: #192841;
     font-weight: bold;
+    font-style: normal;
     box-shadow: 2px 2px 5px #0e1b35;
     cursor: pointer;
 }
