@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+form{
+    height: 450px;
+    width: 300;
+    padding: 40px 60px 40px 60px;
+    background-color: #192841;
+    border-radius: 15px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+label[for=age]{
+    padding-left: 70%;
+}
+
+input[type=text], [type=number]{
+    height: 30px;
+    font-style: italic;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+input[type=text]{
+    width: 76%;
+}
+
+input[type=number]{
+    width: 10%;
+}
+
+
+input[type=radio], [type=checkbox]{
+    padding-right: 40px;
+}
+
+textarea {
+    width: 95%;
+    height: 80px;
+    font-style: italic;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.btn{
+    padding: 10px 0px 0px 10px; 
+    text-align: center;
+}
+
+button{
+    width: 40%;
+    height: 35px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    color: #192841;
+    transition: 0.8s;
+}
+
+
+button:hover{
+    background-color: aquamarine;
+}
+

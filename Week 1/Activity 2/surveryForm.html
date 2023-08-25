@@ -4,11 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survery Form</title>
-
+    <link rel="stylesheet" href="css/surveyForm.css">
+  
+    <!-- Add icon in title bar -->
     <link rel="icon" href="img/HR.png" type="image/x-icon">
     
 </head>
 <body>
+    <main>
+        <form action="#" method="POST">
+            <h1>SURVEY FORM</h1>
+            
+            <div>
+                <label for="name"> Name </label> 
+                <label  for="age"> Age </label> <br>
+                    
+                <input type="text" placeholder="Enter your Name" id="name">
+                <input type="number" placeholder="Age" id="age">  <br> <br>
+            </div>
+
+            <div>
+                Gender
+                <br>
+                <input type="radio" name="gender" value="Male"/>
+                <label> Male </label> 
+
+                <input type="radio" name="gender" value="Female"/>
+                <label> Female </label> 
+
+                <input type="radio" name="gender" value="Other"/>
+                <label> Other </label> <br> <br>
+            </div>
+        
+            <div>
+                Which Programming Languages do you know? 
+                <br>
+                <input type="checkbox" name="prog_languages" value="HTML"/>
+                <label> HTML </label>  <br>
+
+                <input type="checkbox" name="prog_languages" value="CSS"/>
+                <label> CSS </label>  <br>
+
+                <input type="checkbox"  name="prog_languages" value="Javascript"/>
+                <label> Javascript </label>  <br>
+
+                <input type="checkbox" name="prog_languages"  value="Python"/>
+                <label> Python </label>  <br> <br>
+            </div>
+            
+            <div>
+                <label for="comments"> Comments </label>  <br>
+                <textarea type="text" placeholder="Enter your Comments" name="comments"></textarea> <br> 
+            </div>
+            
+            <div class="btn">
+                <button type="submit"> Submit </button>
+            </div>
+        
+        </form>
+    </main> 
     
 </body>
 </html>
