@@ -1,0 +1,12 @@
+.aboutMe-pg{
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+.box{
+    width: 350px;
+    height: 250px;
+    color: white;
+    background-color:  #192841;
+    padding: 45px;
+}
