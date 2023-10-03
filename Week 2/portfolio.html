@@ -3,132 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Hanan Ramos</title>
+    <title>Hanan Ramos | Portfolio</title>
     <link rel="stylesheet" href="css/portfolio.css">
-    <!-- <link rel="stylesheet"href="css/about-me.css"> -->
-    <link rel="icon" href="img/HR-trans-black.png">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="icon" href="assets/HR-trans-black.png">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo"> <img src="img/HR-trans-black.png"  alt="HR Logo"> </div>  
-            
-            <div class="hamburger"> 
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo"> <a href="#"> <img src="assets/HR-trans-black.png" alt="Logo"> </a> </div>
+            <div>
+                <ul class="nav-links">
+                    <li> <a href="#Home"> Home </a> </li>
+                    <li> <a href="#About"> About </a> </li>
+                    <li> <a href="#Experiences"> Experiences</a> </li>
+                    <li> <a href="#Contact"> Contact</a> </li>
+                </ul>
             </div>
+            <div class="soc-media">
+                <li href="https://github.com/hananramss"> <i class="fa fa-github"></i> </li>
+                <li href="https://www.facebook.com/hananhanie29/"> <i class="fa fa-facebook"></i> </li>
+                <li href="https://www.linkedin.com/in/hanan-r-20b89325a/"> <i class="fa fa-linkedin-square"></i> </li>
+            </div>
+        </nav>
 
-            <nav class="nav-bar">
-                <ul class="nav-menu">
-                    <li class="nav-items">
-                        <a  href="#home" class="nav-link"> Home </a>
-                    </li>
-                    <li class="nav-items">
-                        <a  href="#about" class="nav-link"> About </a>
-                    </li>
-                    <li class="nav-items3">
-                        <a  href="#" class="nav-link"> Contact </a>
-                    </li>
-
-                    <!-- <li class="soc-medias"> 
-                        <a href="https://github.com/hananramss" > <i class="fa fa-github"></i> </a> 
-                    </li>
-                    <li class="soc-medias">  <a href="https://www.facebook.com/hananhanie29/" > <i class="fa fa-facebook"></i> </a> 
-                    </li>
-                    <li class="soc-medias"> 
-                        <a href="https://www.instagram.com/hananramsss/" > <i class="fa fa-instagram"></i> </a>
-                    </li >
-                    <li class="soc-medias"> 
-                        <a href="https://www.linkedin.com/in/hanan-r-20b89325a/" > <i class=" fa fa-linkedin"></i> </a>
-                    </li> -->
-                </ul>
-
-            <!-- <div class="soc-medias">
-                <ul>
-                    <li> <a href="https://github.com/hananramss" > <i class="fa fa-github"></i> </a> </li>
-                    <li>  <a href="https://www.facebook.com/hananhanie29/" > <i class="fa fa-facebook"></i> </a>
-                    <li> <a href="https://www.instagram.com/hananramsss/" > <i class="fa fa-instagram"></i> </a></li>
-                    <li> <a href="https://www.linkedin.com/in/hanan-r-20b89325a/" > <i class=" fa fa-linkedin"></i> </a></li>
-                </ul>
-            </div> -->
-            </nav>
-        </header>
-
-        <main>
-            <section id="home">
-                <div class="home-pg">
-                    <div class="content-right">
-                        <img src="img/lightmode-pic.png" alt="HR Picture">
-                    </div>
-        
-                    <div class="content-left">
-                        <h2> ASSALAMU ALAIKOM, I'M</h2>
-        
-                        <h1><font color="#FF7F50"> HANAN </font> <font  color="#192841"> RAMOS </font></h1> <hr>
-        
-                        <p> WEB DEVELOPER </p>
-                        
-                        <div class="btn">
-                            <button> <a href="#about">  MORE ABOUT ME  </a></button>
-                        </div>
-                    </div>
+        <nav id="hamburger-nav">
+            <div class="logo"> <a href="#"> <img src="assets/HR-trans-black.png" alt="Logo"> </a> </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </section>
+                <div class="menu-links" >
+                    <li> <a href="#Home" onclick="toggleMenu()"> Home </a> </li>
+                    <li> <a href="#About" onclick="toggleMenu()"> About </a> </li>
+                    <li> <a href="#Experiences" onclick="toggleMenu()"> Experiences</a> </li>
+                    <li> <a href="#Contact" onclick="toggleMenu()"> Contact</a> </li>
+                </div>
+                <div class="soc-media-links"  >
+                    <li href="https://github.com/hananramss"> <i class="fa fa-github"></i> </li>
+                    <li href="https://www.facebook.com/hananhanie29/"> <i class="fa fa-facebook"></i> </li>
+                    <li href="https://www.linkedin.com/in/hanan-r-20b89325a/"> <i class="fa fa-linkedin-square"></i> </li>
+                </div>
+            </div>
+        </nav>
+        <script src="script.js"></script>
 
-            <section id="about" class="about-sec">
-                <div class="aboutMe-pg">
-                    <div class="content-left">
-                        <img src="img/lightmode-pic.png" alt="HR Picture">
-    
-                        <div class="box">
-                            <p> I am <strong> Hanan Kiram Ramos</strong>, enthusiastic about learning new things, especially in the realm of coding. I am currently based in Iligan City, Philippines. <br><br>
-                            <i class="fa fa-envelope"></i> hananramos19@gmail.com <br> 
-                            <i class="fa fa-phone"></i> 0965-154-1155  
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="assets/profile-pic.png" alt="Hanan Ramos Profile Picture">
+            </div>
+            <div class="section_text">
+                <p class="section_text-p1"> Assalamu Alaikom, I'm </p>
+                <h1 class="title"> <font color="#FF7F50">Hanan</font> Ramos </h1>
+                <p class="section_text-p2"> Aspiring Web developer </p>
+
+                <div class="btn-container">
+                    <button class="btn btn-CV" onclick="window.open('assets/CV_example.pdf')"> Download CV </button>
+                    <button class="btn btn-more" onclick="location.href='#Contact'"> Contact Info </button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">   
+                <div class="section_content-left">
+                    <img src="assets/profile-pic.png" alt="Hanan Ramos Profile Picture">
+                
+                    <div class="section_text_content-left">
+                        <p> I am <strong>Hanan Kiram Ramos</strong>, enthusiastic about learning new things, especially in the realm of coding. I am currently based in Iligan City, Philippines. </p>
+                        
+                        <div class="fa-icons">
+                            <i class="fa fa-envelope"></i>  hananramos19@gmail.com <br>
+                            <i class="fa fa-phone"></i>  0965-154-1155 
                         </div>
                     </div>
     
-                    <div class="content-right">
-                        <h3>KNOW MORE</h3>
-                        <h1>ABOUT <font color="#FF7F50">ME</font></h1> <hr>
+                </div>
     
-                        <p id="con-right">I am an aspiring <strong>web developer</strong>, I'm blending creativity into code to design digital experiences that focus on users. With every piece of code, I'm molding the ever-changing online landscape, dedicated to making a positive impact.</p> <br> <br>
-                        
-                        <a href="#skills"> SKILLS <i class="fa fa-arrow-circle-down"></i></a>
+                <div class="section_text_content-right">
+                    <p class="section_text_p1"> Know More </p>
+                    <h1 class="section_text_title"> About <font color="#FF7F50">Me</font> <hr> </h1> 
+                        <div class="section_text_p2">
+                            <p> I am an aspiring web developer, I'm blending creativity into code to design digital experiences that focus on users. With every piece of code, I'm molding the ever-changing online landscape, dedicated to making a positive impact. </p> <br>  <br>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit  </p>
+                        </div>
+                    <div class="btn_container"> 
+                        <button class="btn-exp" onclick="location.href='#Experiences'"> Experiences </button>
                     </div>
                 </div>
-            </section>
+                
+        </section>
 
-            <section id="skills" class="skills-sec">
-                <div class="skills">
-                    <h1> SKILLS</h1>
-
+        <section id="experiences">
+            <div class="experience-details-container">
+                <div class="section_exp">
+                    <p class="section__text__p1"> Care to share </p>
+                    <h1 class="section__text__title"> My Experiences </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-                    <div  class="card">
-                        <ul> 
-                            <a href="#"> <i class="fa fa-chevron-circle-left"></i> </a>
-                            <li> <h3 class="css"> CSS </h3><img class="logo1" src="img/css-logo.png" alt="CSS Logo"></li>
-                            <li> <h3  class="html"> HTML </h3> <img class="logo2" src="img/html-logo.webp" alt="HTML Logo"></li>
-                            <li> <h3  class="js"> JAVASCRIPT </h3> <img class="logo3" src="img/javascript-logo.png" alt="JS Logo"></li>
-                            <a href="#"><i class="	fa fa-chevron-circle-right"></i></a>
-                        </ul>
-                    </div>
-
                 </div>
+                <div class="exp-container">
+                    <div class="exp-content-container">
+                        <h2 class="exp-text-h2"> Frontend Developer</h2> <br> <br>
+                        <div class="article-container">
+                                <article > 
+                                    <img  class="exp-html" src="assets/html-logo.webp" alt="HTML Logo">
+                                    <h3> HTML </h3>
+                                    <p> Experienced</p>
+                                </article>
+                                <article> 
+                                    <img  class="exp-css" src="assets/css-logo.png" alt="CSS Logo">
+                                    <h3> CSS </h3>
+                                    <p> Intermediate</p>
+                                </article>
+                                <article> 
+                                    <img class="exp-javascript" src="assets/javascript-logo.png" alt="JavaScript Logo">
+                                    <h3 > JavaScript </h3>
+                                    <p> Basic</p>
+                                </article>
+                                <article> 
+                                    <img class="exp-typescript" src="assets/react.png" alt="React Logo">
+                                    <h3> Typescript </h3>
+                                    <p> Basic</p>
+                                </article>
+                        </div>
+                    </div>
+    
+                    <div class="exp-content-container">
+                        <h2 class="exp-text-h2"> Backend Developer</h2> <br> <br>
+                        <div class="article-container">
+                            <article> 
+                                <img class="exp-mysql" src="assets/mysql.png" alt="Mysql Logo">
+                                <h3> Mysql </h3>
+                                <p> Basic</p>
+                            </article>
+                            <article> 
+                                <img class="exp-postgre" src="assets/postgre.png" alt="Postgre Logo">
+                                <h3> Postgre </h3>
+                                <p> Basic</p>
+                            </article>
+                            <article> 
+                                <img class="exp-git" src="assets/git.png" alt="Git Logo">
+                                <h3> Git </h3>
+                                 <p> Intermediate</p>
+                            </article>
+                            <article> 
+                                <img class="exp-git" src="assets/git.png" alt="Git Logo">
+                                <h3> Git </h3>
+                                 <p> Intermediate</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="portfolio">
+            <p class="section__text-p1"> Browse my Group Works</p>
+            <h1 class="title_">PORTFOLIO</h1>
+            
 
-            </section>
-
-        </main>
-
-    </div>
-
-</body>
+        </section>
+    </body>
 </html>
+
+<!-- YOUTUBE LINK: https://www.youtube.com/watch?v=ldwlOzRvYOU -->
